@@ -1,30 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <title>GassinDev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GassinDev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <div>
-    <nav class="nav p-4 justify-content-end">
-      <img src="/images/iconPro.png" class="navbar-brand" width="50">
-      <a href="#" class="nav-link active">Sobre mí</a>
-      <a href="#" class="nav-link">Proyectos</a>
-      <a href="#" class="nav-link">Testimonios</a>
-      <a href="#" class="nav-link">Contacto</a>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-lg">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </div>
+    <section id="inicio">
+        <div class="container-lg mt-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="image-container">
+                        <img src="./img/logoGassinDev.jpg" alt="logo" class="w-100" style="border-radius: 10%;">
+                        <div class="overlay">
+                            <img src="./img/juan.png" alt="overlay" class="overlay-image" style="border-radius: 30%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <p class="display-5">Soy <strong style="color: #185263;">GassinDev</strong>, desarrollador de
+                        aplicaciones web y amante del diseño gráfico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre-mi" class="text-white">
+        <div class="text-center bg-custom">
+            <div class="container p-5">
+                <h2 class="mb-5">Sobre mí</h2>
+                <p class="text-center">
+                    ¡Hola! Soy Juan José Flores Gassín, estudiante de 21 años que está cursando el segundo año
+                    del Grado de Desarrollo de Aplicaciones Web (DAW). Desde muy joven, me he sentido atraído por el
+                    mundo
+                    de la tecnología y la programación, y es por eso que decidí dedicarme a esto. Además de mi interés
+                    por
+                    el desarrollo web, tengo una gran pasión por el diseño gráfico.
+                </p>
+                <p class="text-center">
+                    Actualmente, estoy enfocado en ampliar mis conocimientos en programación y estoy emocionado
+                    por las oportunidades que me ofrece el mundo digital para expresar mi creatividad y contribuir al
+                    desarrollo de proyectos innovadores.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="container">
+            <h2 class="text-center mb-5 bg-custom title">HABILIDADES</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card text-over-image">
+                        <img src="./img/html.gif" class="card-img-top" alt="logoHTML">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Experto en HTML 5 para creación de estructuras web</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="./img/css.gif" class="card-img-top" alt="logoCSS">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Experimentado en CSS 3 para estilos visuales y diseño
+                                responsiv</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="./img/js.gif" class="card-img-top" alt="logoJS">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Desarrollo dinámico con JavaScript: aplicaciones
+                                interactivas y animaciones</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <button class="btn bg-custom text-white" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3 multiCollapseExample4">Ver más
+                    habilidades</button>
+            </p>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <img src="./img/photoshop.gif" class="img-fluid rounded mx-auto d-block mb-3"
+                                alt="Photoshop">
+                            <p>Utilizo <strong>Adobe Photoshop</strong> a un nivel medio-avanzado por hobby. Disfruto
+                                creando proyectos en mis ratos libres.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            <img src="./img/react.png" class="img-fluid rounded mx-auto d-block mb-3" alt="React">
+                            <p>Comenzando a explorar el fascinante mundo de <strong>React</strong>, quiero profundizar mis conocimientos
+                                y habilidades en esta biblioteca de JavaScript líder en el mercado. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            <img src="./img/symfony.JPG" class="img-fluid rounded mx-auto d-block mb-3"
+                                alt="Photoshop">
+                            <p>Actualmente <strong>Symfony 7</strong> es mi framework de backend por excelencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="collapse multi-collapse" id="multiCollapseExample4">
+                        <div class="card card-body">
+                            <img src="./img/bootstrap.png" class="img-fluid rounded mx-auto d-block mb-3"
+                                alt="Photoshop">
+                            <p>Especializado en <strong>Bootstrap 5</strong> para diseño responsivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos">
+        <div id="carousel" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <h2 class="text-center mb-5 bg-custom title">PROYECTOS</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-overlay">
+                        <img src="./img/redmusify.JPG" class="d-block mx-auto img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RedMusicfy</h5>
+                            <p>Realizado con Symfony 7 y React</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-overlay">
+                        <img src="./img/tienda.JPG" class="d-block mx-auto img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tienda</h5>
+                            <p>Realizado en Symfony 7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <footer class="text-center mt-5 bg-custom">
+        <p>&copy; 2024 Juan José Flores Gassín.</p>
+        <p>Contacto: gassindev@gmail.com | Teléfono: 123-456-7890 |
+            <a href="https://github.com/GassinDev"><img src="./img/github.png" alt="LogGitHub" class="logo"></a>
+            <a href="https://www.instagram.com"><img src="./img/instagram.png" alt="LogoInstagram" class="logo"></a>
+        </p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
